@@ -1,0 +1,51 @@
+.welcome-container {
+    background: #f2f7f5;
+    height: 700px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    .container{
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        .jumbotron {
+            background-color: transparent;
+            color: #00473e;
+            padding: 0;
+        }
+        .btn {
+            background-color: #faae2c;
+            color: #00473e;
+        }
+
+
+    }
+
+    .tips {
+        padding: 50px;
+        .cards {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .card {
+                margin: 5px;
+                background-color: #fffffe;
+                a {
+                    text-decoration: none;
+                    color: #00473e;
+                }
+                .card-title {
+                    margin: 24px 0;
+                    .card-text {
+                        color: #475d5b;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -24,5 +24,8 @@
                     <hr>
                     <br>
                     @endforeach
+                    <div class="pagi">
+                    {{ $teams->links() }}
+                    </div>
 </div>
 @endsection

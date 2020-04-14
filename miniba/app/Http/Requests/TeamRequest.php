@@ -26,7 +26,7 @@ class TeamRequest extends FormRequest
         return [
             //
             'name' => ['required', 'string', 'max:20'],
-            'ruby' => ['required'],
+            'prefecture' => ['required'],
             'member' => ['required'],
             'email' => ['required', 'email', 'required', 'max:100'],
             'url' => [],

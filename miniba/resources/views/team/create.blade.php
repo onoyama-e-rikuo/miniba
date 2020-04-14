@@ -20,8 +20,8 @@
                             <input type="text" name="name" class="form-control" >
                         </div>
                         <div class="form-group">
-                            <label>ふりがな</label>
-                            <input type="text" name="ruby" class="form-control" >
+                            <label>都道府県</label>
+                            <input type="text" name="prefecture" class="form-control" >
                         </div>
                         <div class="form-group">
                             <label>メンバー数</label>

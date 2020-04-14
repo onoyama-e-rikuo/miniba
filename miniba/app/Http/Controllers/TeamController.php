@@ -32,11 +32,11 @@ class TeamController extends Controller
             $search_split2 = preg_split('/[\s]/', $search_split, PREG_SPLIT_NO_EMPTY);
             //単語をループで回す
             foreach ($search_split2 as $value) {
-                $teams_info->where('name', 'like', '%' .$value. '%');
+                $teams_info->where('prefecture', 'like', '%' .$value. '%');
             }
         };
 
-        $teams = $teams_info->select('id', 'name', 'member', 'message')->get();
+        $teams = $teams_info->select('id', 'name', 'member', 'message')->paginate(10);
         
 
         return view('team.index', compact('teams'));
@@ -79,7 +79,7 @@ class TeamController extends Controller
         $team = new Team;
         
         $team->name = $request->input('name');
-        $team->ruby = $request->input('ruby');
+        $team->prefecture = $request->input('prefecture');
         $team->member = $request->input('member');
         $team->email = $request->input('email');
         $team->url = $request->input('url');
@@ -133,7 +133,7 @@ class TeamController extends Controller
         $team = Team::find($id);
 
         $team->name = $request->input('name');
-        $team->ruby = $request->input('ruby');
+        $team->prefecture = $request->input('prefecture');
         $team->member = $request->input('member');
         $team->email = $request->input('email');
         $team->url = $request->input('url');

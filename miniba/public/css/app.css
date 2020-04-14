@@ -11122,3 +11122,9 @@ footer {
   margin: 0;
 }
 
+.pagi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+

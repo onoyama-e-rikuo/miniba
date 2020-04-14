@@ -5,7 +5,7 @@
                     <form action="{{ route('team.store') }}" method="POST">
                     @csrf
                         <input type="hidden" name="name" value="{{ $inputs['name'] }}">
-                        <input type="hidden" name="ruby" value="{{ $inputs['ruby'] }}">
+                        <input type="hidden" name="prefecture" value="{{ $inputs['prefecture'] }}">
                         <input type="hidden" name="member" value="{{ $inputs['member'] }}">
                         <input type="hidden" name="email" value="{{ $inputs['email'] }}">
                         <input type="hidden" name="url" value="{{ $inputs['url'] }}">
@@ -17,8 +17,8 @@
                                 <td>{{ $inputs['name'] }}</td>
                             </tr>
                             <tr>
-                                <th>ふりがな</th>
-                                <td>{{ $inputs['ruby'] }}</td>
+                                <th>都道府県</th>
+                                <td>{{ $inputs['prefecture'] }}</td>
                             </tr>
                             <tr>
                                 <th>メンバー数</th>

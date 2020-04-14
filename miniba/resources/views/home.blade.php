@@ -10,8 +10,8 @@
                         <td>{{ $team->name }}</td>
                     </tr>
                     <tr>
-                        <th>ふりがな</th>
-                        <td>{{ $team->ruby }}</td>
+                        <th>都道府県</th>
+                        <td>{{ $team->prefecture }}</td>
                     </tr>
                     <tr>
                         <th>メンバー数</th>

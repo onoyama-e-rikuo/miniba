@@ -8,7 +8,7 @@
             <h1 class="display-4">チームを探す</h1>
             <form method="GET" action="{{ route('team.index') }}" class="form-inline my-2 my-lg-0">
                 @csrf
-                    <input class="form-control col-sm-8 mr-sm-2" type="search" placeholder="キーワードを入力" aria-label="Search" name="search">
+                    <input class="form-control col-sm-8 mr-sm-2" type="search" placeholder="都道府県を入力" aria-label="Search" name="search">
                     <button class="btn my-2 my-sm-0" type="submit">検索</button>
             </form>
         </div>

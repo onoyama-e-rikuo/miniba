@@ -32,13 +32,6 @@ footer {
 .navbar {
     height: 100px;
     background-color: #f2f7f5;
-    // color: white;
-    // .navbar-brand {
-    //     color: white;
-    // }
-    // .dropdown-toggle {
-    //     color: white;
-    // }
 }
 
 .nav-text {
@@ -56,4 +49,10 @@ footer {
     p {
         margin: 0;
     }
+}
+
+.pagi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
